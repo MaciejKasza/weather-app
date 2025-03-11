@@ -2,7 +2,7 @@ const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export const getCityFromCoordinates = (latitude, longitude) => {
   return fetch(
-    `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+    `nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
   )
     .then((response) => response.json())
     .then((data) => {
