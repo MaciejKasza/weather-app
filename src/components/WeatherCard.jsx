@@ -159,16 +159,7 @@ const WeatherCard = ({
   weaterIcon,
 }) => {
   const isDarkMode = !!localStorage.getItem("darkMode");
-  console.log("temp", temp);
 
-  // const temp = 24;
-  // const tempFelsLike = 22;
-  // const humidity = 35;
-  // const wind = 5;
-  // const pressure = 1013;
-  // const uv = 8;
-  // const sunset = formatTime(new Date());
-  // const sunrise = formatTime(new Date());
   return (
     <Card>
       <MainDetails>

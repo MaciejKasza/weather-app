@@ -45,6 +45,5 @@ export const processHourlyWeatherData = (data) => {
     wind: item.wind,
   }));
 
-  console.log(hourlyData);
   return hourlyData;
 };

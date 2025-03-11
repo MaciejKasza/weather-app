@@ -43,8 +43,6 @@ const ForecastItem = styled.div`
 `;
 
 const DailyForecast = ({ data }) => {
-  // console.log("Data received:", JSON.stringify(data, null, 2)); // Poprawne logowanie
-
   if (!data || data.length === 0) {
     return <p>Loading forecast...</p>;
   }

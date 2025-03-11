@@ -30,7 +30,6 @@ const HeaderContainer = styled.div`
 `;
 
 const Header = ({ darkMode, setDarkMode, handleSearch }) => {
-  console.log("raz");
   return (
     <HeaderContainer>
       <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />

@@ -51,8 +51,6 @@ const ForecastItem = styled.div`
 `;
 
 const HourlyForecast = ({ data }) => {
-  console.log("Data received:", data); // Poprawne logowanie
-
   if (!data || data.length === 0) {
     return <p>Loading forecast...</p>;
   }

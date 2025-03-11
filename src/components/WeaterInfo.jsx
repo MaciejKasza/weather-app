@@ -33,8 +33,6 @@ const Container = styled.div`
 `;
 
 const WeaterInfo = ({ city, data }) => {
-  console.log(data, city);
-
   const infoCardData = {
     name: data.name,
     temp: data.main.temp,
