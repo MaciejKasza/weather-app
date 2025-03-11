@@ -42,7 +42,7 @@ const LocationButton = ({ handleSearch }) => {
         }
       })
       .catch((error) => {
-        console.log("Błąd:", error);
+        console.error("Błąd:", error);
       });
   };
 

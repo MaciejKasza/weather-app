@@ -63,7 +63,6 @@ const App = () => {
       setCity(value);
       localStorage.setItem("city", value);
     }
-    console.log(res);
   };
 
   return (
