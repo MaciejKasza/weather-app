@@ -10,6 +10,7 @@ const HeaderContainer = styled.div`
   align-items: center;
 
   flex-wrap: wrap;
+  margin-bottom: 15px;
 
   @media (width <= 889px) {
     flex-wrap: wrap;
