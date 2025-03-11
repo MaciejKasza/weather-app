@@ -2,7 +2,7 @@ const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export const getCityFromCoordinates = (latitude, longitude) => {
   return fetch(
-    `nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+    `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -34,7 +34,7 @@ export const getCityFromLocation = () => {
 export const getCityCordsByName = (city) => {
   return new Promise((resolve, reject) => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {
