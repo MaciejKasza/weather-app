@@ -3,7 +3,7 @@ import { getCityCordsByName } from "./fetchLocation";
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export const fetchWeather = async (city) => {
-  const url = `api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 
   try {
     const response = await fetch(url);
@@ -27,7 +27,7 @@ const fetchHourlyWeather = async (city) => {
 export const fetchDailyWeather = async (city, cnt = 5) => {
   const cords = await getCityCordsByName(city);
 
-  const url = `api.openweathermap.org/data/2.5/forecast/?lat=${cords.lat}&lon=${cords.lon}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast/?lat=${cords.lat}&lon=${cords.lon}&appid=${API_KEY}&units=metric`;
   try {
     const response = await fetch(url);
 
