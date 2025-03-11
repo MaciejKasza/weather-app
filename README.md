@@ -1,3 +1,8 @@
+#Live preview 
+https://maciejkasza.github.io/weather-app/
+
+Weather application written in React. Use styled components for styling, as a data source the free API is used. The application uses https://openweathermap.org/api
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
