@@ -1,4 +1,4 @@
-#Live preview 
+# Live preview 
 https://maciejkasza.github.io/weather-app/
 
 Weather application written in React. Use styled components for styling, as a data source the free API is used. The application uses https://openweathermap.org/api
